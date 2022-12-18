@@ -1,0 +1,45 @@
+Windows Registry Editor Version 5.00
+
+; disable connect network when first start
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE]
+"BypassNRO"=dword:00000001
+
+; disable UAC (needed for correct post-install script perms)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLUA"=dword:00000000
+
+; disable updates (shows up in OOBE)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate]
+"ExcludeWUDriversInQualityUpdate"=dword:00000001
+"DisableWindowsUpdateAccess"=dword:00000001
+"AllowAutoWindowsUpdateDownloadOverMeteredNetwork"=dword:00000001
+"DisableDualScan"=dword:00000001
+"AUPowerManagement"=dword:00000000
+"SetAutoRestartNotificationDisable"=dword:00000001
+"ManagePreviewBuilds"=dword:00000001
+"ManagePreviewBuildsPolicyValue"=dword:00000000
+"DeferFeatureUpdates"=dword:00000001
+"BranchReadinessLevel"=dword:00000014
+"DeferFeatureUpdatesPeriodInDays"=dword:0000016d
+"DeferQualityUpdates"=dword:00000001
+"DeferQualityUpdatesPeriodInDays"=dword:00000004
+"SetDisableUXWUAccess"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU]
+"AUOptions"=dword:00000002
+"AutoInstallMinorUpdates"=dword:00000000
+"NoAutoUpdate"=dword:00000001
+"NoAUAsDefaultShutdownOption"=dword:00000001
+"NoAUShutdownOption"=dword:00000001
+"NoAutoRebootWithLoggedOnUsers"=dword:00000001
+"IncludeRecommendedUpdates"=dword:00000000
+"EnableFeaturedSOFTWARE"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching]
+"SearchOrderConfig"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Device Metadata]
+"PreventDeviceMetadataFromNetwork"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CloudContent]
+"DisableWindowsConsumerFeatures"=dword:00000001
