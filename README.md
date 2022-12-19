@@ -1,4 +1,4 @@
-# **[简体中文](/README/zh_Hans.md)**
+**[简体中文](./README/zh_Hans.md)**
 # About
 
 **This is a WIP project. The author will not be held responsible for any potential risks!**
