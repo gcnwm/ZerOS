@@ -13,5 +13,5 @@ ZerOS 是基于Windows11修改的版本，为游戏玩家和开发者定制。
 
 1. 获取最新的Windows 11镜像
 2. 下载并安装 [NTLite](https://www.ntlite.com/) (Home Version及以上版本).
-3. 导入预设[ZerOS.xml](ZerOSv011.xml) 并应用.
-4. 添加 [res/ZerOS.reg](./res/ZerOS.reg)中的注册表文件
+3. 导入预设[ZerOS.xml](../ZerOSv011.xml) 并应用.
+4. 添加 [res/ZerOS.reg](../res/ZerOS.reg)中的注册表文件
